@@ -1,11 +1,333 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Daisy UI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- CSS -->
+    <style>
+        .thin {
+            font-family: "Poppins", sans-serif;
+            font-weight: 100;
+            font-style: normal;
+        }
+
+        .extralight {
+            font-family: "Poppins", sans-serif;
+            font-weight: 200;
+            font-style: normal;
+        }
+
+        .light {
+            font-family: "Poppins", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        .regular {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .medium {
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        .semibold {
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        .bold {
+            font-family: "Poppins", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        .extrabold {
+            font-family: "Poppins", sans-serif;
+            font-weight: 800;
+            font-style: normal;
+        }
+
+        .black {
+            font-family: "Poppins", sans-serif;
+            font-weight: 900;
+            font-style: normal;
+        }
+    </style>
     <title>Assignment-5</title>
 </head>
-<body>
-    
+
+<body class="bg-[#F4F7FF]">
+    <header class="flex justify-center">
+        <div class="flex justify-between h-[6.25rem] w-[96rem] my-6 bg-white rounded-2xl px-6">
+            <div class="flex items-center gap-2">
+                <img src="assets/logo.png" alt="">
+                <h1 class="text-4xl tracking-wide"><span class="light">Dev</span><span class="bold">Board</span></h1>
+            </div>
+            <div class="flex items-center justify-center gap-8">
+                <div class="flex items-center justify-evenly h-16 w-32 bg-[#F4F7FF] rounded-[2rem]">
+                    <img height="32px" width="32px" src="assets/checkbox.png" alt="">
+                    <p class="bold text-[32px] tracking-wide">23</p>
+                </div>
+                <div class="bg-[#F4F7FF] h-16 w-16 flex justify-center items-center rounded-full">
+                    <img src="assets/theme-btn.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="flex justify-center">
+        <div class="h-[56rem] w-[96rem] flex justify-between mb-16">
+            <div class="bg-white w-[71.625rem] h-full rounded-2xl p-4">
+                <div class="flex justify-between">
+                    <div class="flex justify-center items-center">
+                        <div class="bg-[#F4F7FF] flex justify-evenly items-center w-[16.4375rem] h-32 rounded-xl">
+                            <div class="bg-white h-16 w-16 flex justify-center items-center rounded-full">
+                                <img src="assets/checkbox.png" alt="">
+                            </div>
+                            <div>
+                                <p class="medium text-base text-[#00303ccb] tracking-wide">
+                                    Task Assigned
+                                </p>
+                                <p class="bold text-[32px] tracking-wide">
+                                    05
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <div
+                            class="bg-gradient-to-br from-[#3752FD] from-0% via-[#6C7FFA] via-[53%] to-[#9BA8F8] to-100% flex justify-center items-center w-[32.75rem] h-32 rounded-xl px-10 py-6 gap-5">
+                            <div>
+                                <img src="assets/board.png" alt="">
+                            </div>
+                            <div>
+                                <p class="light tracking-wide text-2xl text-white">
+                                    Discover Something<br>New Today!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <div class="bg-[#F4F7FF] flex justify-evenly items-center w-[16.4375rem] h-32 rounded-xl">
+                            <div class="bg-white h-16 w-16 flex justify-center items-center rounded-full">
+                                <img src="assets/calender.png" alt="">
+                            </div>
+                            <div>
+                                <p class="regular text-[22px] tracking-wide">
+                                    Wed ,
+                                </p>
+                                <p class="bold text-[22px] tracking-wide">
+                                    Jul 28 2025
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="border-2px border-dotted bg-[#3751fd19] my-8">
+                <div>
+                    <div class="grid grid-rows-2">
+                        <div class="flex justify-between">
+                            <div class="bg-[#F4F7FF] w-[21.375rem] h-[19.8125rem] rounded-2xl p-6">
+                                <div class="w-[7.125rem] h-10 bg-white flex justify-center items-center rounded-lg">
+                                    <p class="regular text-base tracking-wide">ShopEase</p>
+                                </div>
+                                <h1 class="medium text-2xl my-4">Fix Mobile Button Issue</h1>
+                                <div class="h-[5.75rem] w-full bg-white flex justify-center items-center rounded-lg p-4">
+                                    <p class="regular text-base text-[#00303ccb] tracking-wide">
+                                        Debug using Chrome<br>DevTools, check for overlappi...
+                                    </p>
+                                </div>
+                                <hr class="border-2px border-dotted bg-[#3751fd19] my-4">
+                                <div class="flex justify-between">
+                                    <div>
+                                        <p class="regular text-sm text-[#00303ccb] tracking-wide">
+                                            Deadline
+                                        </p>
+                                        <p class="medium text-base tracking-wide">
+                                            21 March 2025 
+                                        </p>
+                                    </div>
+                                    <button class="w-[8.4375rem] h-11 bg-[#3752FD] text-white medium text-base rounded-lg tracking-wide">
+                                        Completed
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="bg-[#F4F7FF] w-[21.375rem] h-[19.8125rem] rounded-2xl p-6">
+                                <div class="w-[7.125rem] h-10 bg-white flex justify-center items-center rounded-lg">
+                                    <p class="regular text-base tracking-wide">CloudSync</p>
+                                </div>
+                                <h1 class="medium text-2xl my-4">Add Dark Mode</h1>
+                                <div class="h-[5.75rem] w-full bg-white flex justify-center items-center rounded-lg p-4">
+                                    <p class="regular text-base text-[#00303ccb] tracking-wide">
+                                        Store the user's preference in<br>localStorage, update CSS vari...
+                                    </p>
+                                </div>
+                                <hr class="border-2px border-dotted bg-[#3751fd19] my-4">
+                                <div class="flex justify-between">
+                                    <div>
+                                        <p class="regular text-sm text-[#00303ccb] tracking-wide">
+                                            Deadline
+                                        </p>
+                                        <p class="medium text-base tracking-wide">
+                                            21 March 2025 
+                                        </p>
+                                    </div>
+                                    <button class="w-[8.4375rem] h-11 bg-[#3752FD] text-white medium text-base rounded-lg tracking-wide">
+                                        Completed
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="bg-[#F4F7FF] w-[21.375rem] h-[19.8125rem] rounded-2xl p-6">
+                                <div class="w-[7.125rem] h-10 bg-white flex justify-center items-center rounded-lg">
+                                    <p class="regular text-base tracking-wide">SwiftPay</p>
+                                </div>
+                                <h1 class="medium text-2xl my-4">Optimize  Home page</h1>
+                                <div class="h-[5.75rem] w-full bg-white flex justify-center items-center rounded-lg p-4">
+                                    <p class="regular text-base text-[#00303ccb] tracking-wide">
+                                        Debug using Chrome<br>DevTools, check for overlappi...
+                                    </p>
+                                </div>
+                                <hr class="border-2px border-dotted bg-[#3751fd19] my-4">
+                                <div class="flex justify-between">
+                                    <div>
+                                        <p class="regular text-sm text-[#00303ccb] tracking-wide">
+                                            Deadline
+                                        </p>
+                                        <p class="medium text-base tracking-wide">
+                                            21 March 2025 
+                                        </p>
+                                    </div>
+                                    <button class="w-[8.4375rem] h-11 bg-[#3752FD] text-white medium text-base rounded-lg tracking-wide">
+                                        Completed
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex justify-between mt-4">
+                            <div class="bg-[#F4F7FF] w-[21.375rem] h-[19.8125rem] rounded-2xl p-6">
+                                <div class="w-[7.125rem] h-10 bg-white flex justify-center items-center rounded-lg">
+                                    <p class="regular text-base tracking-wide">Meta</p>
+                                </div>
+                                <h1 class="medium text-2xl my-4">Add new emoji 🤲</h1>
+                                <div class="h-[5.75rem] w-full bg-white flex justify-center items-center rounded-lg p-4">
+                                    <p class="regular text-base text-[#00303ccb] tracking-wide">
+                                        Debug using Chrome<br>DevTools, check for overlappi...
+                                    </p>
+                                </div>
+                                <hr class="border-2px border-dotted bg-[#3751fd19] my-4">
+                                <div class="flex justify-between">
+                                    <div>
+                                        <p class="regular text-sm text-[#00303ccb] tracking-wide">
+                                            Deadline
+                                        </p>
+                                        <p class="medium text-base tracking-wide">
+                                            21 March 2025 
+                                        </p>
+                                    </div>
+                                    <button class="w-[8.4375rem] h-11 bg-[#3752FD] text-white medium text-base rounded-lg tracking-wide">
+                                        Completed
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="bg-[#F4F7FF] w-[21.375rem] h-[19.8125rem] rounded-2xl p-6">
+                                <div class="w-[7.125rem] h-10 bg-white flex justify-center items-center rounded-lg">
+                                    <p class="regular text-base tracking-wide">Google LLC</p>
+                                </div>
+                                <h1 class="medium text-2xl my-4">Integrate OpenAI API</h1>
+                                <div class="h-[5.75rem] w-full bg-white flex justify-center items-center rounded-lg p-4">
+                                    <p class="regular text-base text-[#00303ccb] tracking-wide">
+                                        Debug using Chrome<br>DevTools, check for overlappi...
+                                    </p>
+                                </div>
+                                <hr class="border-2px border-dotted bg-[#3751fd19] my-4">
+                                <div class="flex justify-between">
+                                    <div>
+                                        <p class="regular text-sm text-[#00303ccb] tracking-wide">
+                                            Deadline
+                                        </p>
+                                        <p class="medium text-base tracking-wide">
+                                            21 March 2025 
+                                        </p>
+                                    </div>
+                                    <button class="w-[8.4375rem] h-11 bg-[#3752FD] text-white medium text-base rounded-lg tracking-wide">
+                                        Completed
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="bg-[#F4F7FF] w-[21.375rem] h-[19.8125rem] rounded-2xl p-6">
+                                <div class="w-[7.125rem] h-10 bg-white flex justify-center items-center rounded-lg">
+                                    <p class="regular text-base tracking-wide">Glassdoar</p>
+                                </div>
+                                <h1 class="medium text-2xl my-4">Improve Job searching</h1>
+                                <div class="h-[5.75rem] w-full bg-white flex justify-center items-center rounded-lg p-4">
+                                    <p class="regular text-base text-[#00303ccb] tracking-wide">
+                                        Debug using Chrome<br>DevTools, check for overlappi...
+                                    </p>
+                                </div>
+                                <hr class="border-2px border-dotted bg-[#3751fd19] my-4">
+                                <div class="flex justify-between">
+                                    <div>
+                                        <p class="regular text-sm text-[#00303ccb] tracking-wide">
+                                            Deadline
+                                        </p>
+                                        <p class="medium text-base tracking-wide">
+                                            21 March 2025 
+                                        </p>
+                                    </div>
+                                    <button class="w-[8.4375rem] h-11 bg-[#3752FD] text-white medium text-base rounded-lg tracking-wide">
+                                        Completed
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white w-[22.875rem] h-full rounded-2xl p-4">
+                <div class="flex gap-4 justify-center my-4">
+                    <img src="assets/activity.png" alt="">
+                    <p class="medium text-xl tracking-wide">
+                        Activity Log
+                    </p>
+                </div>
+                <div class="flex justify-center">
+                    <button class="w-[9.375rem] h-11 bg-[#3752FD] text-white medium text-base rounded-lg tracking-wide">
+                        Clear History
+                    </button>
+                </div>
+                <hr class="border-2px border-dotted bg-[#3751fd19] mt-6">
+                <div>
+                    <div class="w-[21rem] h-[4.25rem] rounded-lg p-[10px] bg-[#F4F7FF] flex justify-center mt-6">
+                        <p class="regular text-base tracking-wide">
+                            You have Complete The Task Add Dark Mode at 12:48:15 PM
+                        </p>
+                    </div>
+                    <div class="w-[21rem] h-[4.25rem] rounded-lg p-[10px] bg-[#F4F7FF] flex justify-center mt-6">
+                        <p class="regular text-base tracking-wide">
+                            You have Complete The Task Add Dark Mode at 12:48:15 PM
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>
