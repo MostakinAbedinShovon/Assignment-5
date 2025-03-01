@@ -82,7 +82,7 @@
             <div class="flex items-center justify-center gap-8">
                 <div class="flex items-center justify-evenly h-16 w-32 bg-[#F4F7FF] rounded-[2rem]">
                     <img height="32px" width="32px" src="assets/checkbox.png" alt="">
-                    <p class="bold text-[32px] tracking-wide">23</p>
+                    <p id="check-box" class="bold text-[32px] tracking-wide">23</p>
                 </div>
                 <div class="bg-[#F4F7FF] h-16 w-16 flex justify-center items-center rounded-full">
                     <img src="assets/theme-btn.png" alt="">
@@ -103,13 +103,13 @@
                                 <p class="medium text-base text-[#00303ccb] tracking-wide">
                                     Task Assigned
                                 </p>
-                                <p class="bold text-[32px] tracking-wide">
-                                    05
+                                <p id="task-count" class="bold text-[32px] tracking-wide">
+                                    6
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class="flex justify-center items-center">
+                    <div id="nav-to-q&a" class="flex justify-center items-center">
                         <div
                             class="bg-gradient-to-br from-[#3752FD] from-0% via-[#6C7FFA] via-[53%] to-[#9BA8F8] to-100% flex justify-center items-center w-[32.75rem] h-32 rounded-xl px-10 py-6 gap-5">
                             <div>
@@ -128,12 +128,10 @@
                                 <img src="assets/calender.png" alt="">
                             </div>
                             <div>
-                                <p class="regular text-[22px] tracking-wide">
-                                    Wed ,
-                                </p>
-                                <p class="bold text-[22px] tracking-wide">
-                                    Jul 28 2025
-                                </p>
+                                <!-- Live Day -->
+                                <p id="Day" class="regular text-[22px] tracking-wide"></p>
+                                <!-- Live Date -->
+                                <p id="Date" class="semibold text-[22px] tracking-wide"></p>
                             </div>
                         </div>
                     </div>
@@ -146,8 +144,9 @@
                                 <div class="w-[7.125rem] h-10 bg-white flex justify-center items-center rounded-lg">
                                     <p class="regular text-base tracking-wide">ShopEase</p>
                                 </div>
-                                <h1 class="medium text-2xl my-4">Fix Mobile Button Issue</h1>
-                                <div class="h-[5.75rem] w-full bg-white flex justify-center items-center rounded-lg p-4">
+                                <h1 id="hdr1" class="medium text-2xl my-4">Fix Mobile Button Issue</h1>
+                                <div
+                                    class="h-[5.75rem] w-full bg-white flex justify-center items-center rounded-lg p-4">
                                     <p class="regular text-base text-[#00303ccb] tracking-wide">
                                         Debug using Chrome<br>DevTools, check for overlappi...
                                     </p>
@@ -159,10 +158,11 @@
                                             Deadline
                                         </p>
                                         <p class="medium text-base tracking-wide">
-                                            21 March 2025 
+                                            21 March 2025
                                         </p>
                                     </div>
-                                    <button class="w-[8.4375rem] h-11 bg-[#3752FD] text-white medium text-base rounded-lg tracking-wide">
+                                    <button id="btn1"
+                                        class="w-[8.4375rem] h-11 bg-[#3752FD] text-white medium text-base rounded-lg tracking-wide">
                                         Completed
                                     </button>
                                 </div>
@@ -171,8 +171,9 @@
                                 <div class="w-[7.125rem] h-10 bg-white flex justify-center items-center rounded-lg">
                                     <p class="regular text-base tracking-wide">CloudSync</p>
                                 </div>
-                                <h1 class="medium text-2xl my-4">Add Dark Mode</h1>
-                                <div class="h-[5.75rem] w-full bg-white flex justify-center items-center rounded-lg p-4">
+                                <h1 id="hdr2" class="medium text-2xl my-4">Add Dark Mode</h1>
+                                <div
+                                    class="h-[5.75rem] w-full bg-white flex justify-center items-center rounded-lg p-4">
                                     <p class="regular text-base text-[#00303ccb] tracking-wide">
                                         Store the user's preference in<br>localStorage, update CSS vari...
                                     </p>
@@ -184,10 +185,11 @@
                                             Deadline
                                         </p>
                                         <p class="medium text-base tracking-wide">
-                                            21 March 2025 
+                                            21 March 2025
                                         </p>
                                     </div>
-                                    <button class="w-[8.4375rem] h-11 bg-[#3752FD] text-white medium text-base rounded-lg tracking-wide">
+                                    <button id="btn2"
+                                        class="w-[8.4375rem] h-11 bg-[#3752FD] text-white medium text-base rounded-lg tracking-wide">
                                         Completed
                                     </button>
                                 </div>
@@ -196,8 +198,9 @@
                                 <div class="w-[7.125rem] h-10 bg-white flex justify-center items-center rounded-lg">
                                     <p class="regular text-base tracking-wide">SwiftPay</p>
                                 </div>
-                                <h1 class="medium text-2xl my-4">Optimize  Home page</h1>
-                                <div class="h-[5.75rem] w-full bg-white flex justify-center items-center rounded-lg p-4">
+                                <h1 id="hdr3" class="medium text-2xl my-4">Optimize Home page</h1>
+                                <div
+                                    class="h-[5.75rem] w-full bg-white flex justify-center items-center rounded-lg p-4">
                                     <p class="regular text-base text-[#00303ccb] tracking-wide">
                                         Debug using Chrome<br>DevTools, check for overlappi...
                                     </p>
@@ -209,23 +212,25 @@
                                             Deadline
                                         </p>
                                         <p class="medium text-base tracking-wide">
-                                            21 March 2025 
+                                            21 March 2025
                                         </p>
                                     </div>
-                                    <button class="w-[8.4375rem] h-11 bg-[#3752FD] text-white medium text-base rounded-lg tracking-wide">
+                                    <button id="btn3"
+                                        class="w-[8.4375rem] h-11 bg-[#3752FD] text-white medium text-base rounded-lg tracking-wide">
                                         Completed
                                     </button>
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="flex justify-between mt-4">
                             <div class="bg-[#F4F7FF] w-[21.375rem] h-[19.8125rem] rounded-2xl p-6">
                                 <div class="w-[7.125rem] h-10 bg-white flex justify-center items-center rounded-lg">
                                     <p class="regular text-base tracking-wide">Meta</p>
                                 </div>
-                                <h1 class="medium text-2xl my-4">Add new emoji 🤲</h1>
-                                <div class="h-[5.75rem] w-full bg-white flex justify-center items-center rounded-lg p-4">
+                                <h1 id="hdr4" class="medium text-2xl my-4">Add new emoji 🤲</h1>
+                                <div
+                                    class="h-[5.75rem] w-full bg-white flex justify-center items-center rounded-lg p-4">
                                     <p class="regular text-base text-[#00303ccb] tracking-wide">
                                         Debug using Chrome<br>DevTools, check for overlappi...
                                     </p>
@@ -237,10 +242,11 @@
                                             Deadline
                                         </p>
                                         <p class="medium text-base tracking-wide">
-                                            21 March 2025 
+                                            21 March 2025
                                         </p>
                                     </div>
-                                    <button class="w-[8.4375rem] h-11 bg-[#3752FD] text-white medium text-base rounded-lg tracking-wide">
+                                    <button id="btn4"
+                                        class="w-[8.4375rem] h-11 bg-[#3752FD] text-white medium text-base rounded-lg tracking-wide">
                                         Completed
                                     </button>
                                 </div>
@@ -249,8 +255,9 @@
                                 <div class="w-[7.125rem] h-10 bg-white flex justify-center items-center rounded-lg">
                                     <p class="regular text-base tracking-wide">Google LLC</p>
                                 </div>
-                                <h1 class="medium text-2xl my-4">Integrate OpenAI API</h1>
-                                <div class="h-[5.75rem] w-full bg-white flex justify-center items-center rounded-lg p-4">
+                                <h1 id="hdr5" class="medium text-2xl my-4">Integrate OpenAI API</h1>
+                                <div
+                                    class="h-[5.75rem] w-full bg-white flex justify-center items-center rounded-lg p-4">
                                     <p class="regular text-base text-[#00303ccb] tracking-wide">
                                         Debug using Chrome<br>DevTools, check for overlappi...
                                     </p>
@@ -262,10 +269,11 @@
                                             Deadline
                                         </p>
                                         <p class="medium text-base tracking-wide">
-                                            21 March 2025 
+                                            21 March 2025
                                         </p>
                                     </div>
-                                    <button class="w-[8.4375rem] h-11 bg-[#3752FD] text-white medium text-base rounded-lg tracking-wide">
+                                    <button id="btn5"
+                                        class="w-[8.4375rem] h-11 bg-[#3752FD] text-white medium text-base rounded-lg tracking-wide">
                                         Completed
                                     </button>
                                 </div>
@@ -274,8 +282,9 @@
                                 <div class="w-[7.125rem] h-10 bg-white flex justify-center items-center rounded-lg">
                                     <p class="regular text-base tracking-wide">Glassdoar</p>
                                 </div>
-                                <h1 class="medium text-2xl my-4">Improve Job searching</h1>
-                                <div class="h-[5.75rem] w-full bg-white flex justify-center items-center rounded-lg p-4">
+                                <h1 id="hdr6" class="medium text-2xl my-4">Improve Job searching</h1>
+                                <div
+                                    class="h-[5.75rem] w-full bg-white flex justify-center items-center rounded-lg p-4">
                                     <p class="regular text-base text-[#00303ccb] tracking-wide">
                                         Debug using Chrome<br>DevTools, check for overlappi...
                                     </p>
@@ -287,10 +296,11 @@
                                             Deadline
                                         </p>
                                         <p class="medium text-base tracking-wide">
-                                            21 March 2025 
+                                            21 March 2025
                                         </p>
                                     </div>
-                                    <button class="w-[8.4375rem] h-11 bg-[#3752FD] text-white medium text-base rounded-lg tracking-wide">
+                                    <button id="btn6"
+                                        class="w-[8.4375rem] h-11 bg-[#3752FD] text-white medium text-base rounded-lg tracking-wide">
                                         Completed
                                     </button>
                                 </div>
@@ -308,26 +318,23 @@
                     </p>
                 </div>
                 <div class="flex justify-center">
-                    <button class="w-[9.375rem] h-11 bg-[#3752FD] text-white medium text-base rounded-lg tracking-wide">
+                    <button id="clear" class="w-[9.375rem] h-11 bg-[#3752FD] text-white medium text-base rounded-lg tracking-wide">
                         Clear History
                     </button>
                 </div>
                 <hr class="border-2px border-dotted bg-[#3751fd19] mt-6">
-                <div>
-                    <div class="w-[21rem] h-[4.25rem] rounded-lg p-[10px] bg-[#F4F7FF] flex justify-center mt-6">
-                        <p class="regular text-base tracking-wide">
-                            You have Complete The Task Add Dark Mode at 12:48:15 PM
-                        </p>
-                    </div>
-                    <div class="w-[21rem] h-[4.25rem] rounded-lg p-[10px] bg-[#F4F7FF] flex justify-center mt-6">
-                        <p class="regular text-base tracking-wide">
-                            You have Complete The Task Add Dark Mode at 12:48:15 PM
-                        </p>
-                    </div>
-                </div>
+                <!-- For Activity Log -->
+                <div id="activity-log"></div>
             </div>
         </div>
     </main>
+    <script>
+        document.getElementById('nav-to-q&a').addEventListener('click', function (event) {
+            event.preventDefault();
+            window.location.href = "que_ans.html"
+        })
+    </script>
+    <script src="operations.js"></script>
 </body>
 
 </html>

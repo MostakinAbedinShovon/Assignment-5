@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -70,6 +71,7 @@
     </style>
     <title>Question & Answer</title>
 </head>
+
 <body class="bg-[#F4F7FF]">
     <header class="flex justify-center">
         <div class="flex justify-between h-[6.25rem] w-[96rem] my-6 bg-white rounded-2xl px-6">
@@ -78,7 +80,8 @@
                 <h1 class="text-4xl tracking-wide"><span class="light">Dev</span><span class="bold">Board</span></h1>
             </div>
             <div class="flex items-center justify-center gap-8">
-                <button class="w-[10rem] h-14 bg-[#3752FD] text-white medium text-lg rounded-lg tracking-wide">
+                <button id="nav-to-home"
+                    class="w-[10rem] h-14 bg-[#3752FD] text-white medium text-lg rounded-lg tracking-wide">
                     Back to Desk
                 </button>
             </div>
@@ -88,17 +91,23 @@
         <h1 class="bold text-3xl text-center mb-6">Blogs</h1>
         <div class="flex justify-center">
             <div class="bg-white w-[96rem] mb-6 rounded-2xl">
-                <h1 class="semibold text-xl tracking-wide p-6">Question-1: What are the different ways to select an element in the DOM?</h1>
+                <h1 class="semibold text-xl tracking-wide p-6">Question-1: What are the different ways to select an
+                    element in the DOM?</h1>
                 <hr class="border-2px border-dotted bg-[#3751fd19]">
-                <p class="regular text-lg tracking-wide p-6">Elements in the DOM can be selected using methods like getElementById,getElementsByClassName, getElementsByTagName, querySelector, and querySelectorAll, or by traversing the DOM hierarchy.
+                <p class="regular text-lg tracking-wide p-6">Elements in the DOM can be selected using methods like
+                    getElementById,getElementsByClassName, getElementsByTagName, querySelector, and querySelectorAll, or
+                    by traversing the DOM hierarchy.
                 </p>
             </div>
         </div>
         <div class="flex justify-center">
             <div class="bg-white w-[96rem] mb-6 rounded-2xl">
-                <h1 class="semibold text-xl tracking-wide p-6">Question-2: What is the difference between innerHTML, innerText, and textContent?</h1>
+                <h1 class="semibold text-xl tracking-wide p-6">Question-2: What is the difference between innerHTML,
+                    innerText, and textContent?</h1>
                 <hr class="border-2px border-dotted bg-[#3751fd19]">
-                <p class="regular text-lg tracking-wide p-6">innerHTML retrieves or sets the HTML markup inside an element, innerText returns or sets the visible text considering CSS styles, and textContent retrieves or sets all text within an element, ignoring formatting and hidden content.
+                <p class="regular text-lg tracking-wide p-6">innerHTML retrieves or sets the HTML markup inside an
+                    element, innerText returns or sets the visible text considering CSS styles, and textContent
+                    retrieves or sets all text within an element, ignoring formatting and hidden content.
                 </p>
             </div>
         </div>
@@ -106,7 +115,9 @@
             <div class="bg-white w-[96rem] mb-6 rounded-2xl">
                 <h1 class="semibold text-xl tracking-wide p-6">Question-3: What is event delegation in the DOM?</h1>
                 <hr class="border-2px border-dotted bg-[#3751fd19]">
-                <p class="regular text-lg tracking-wide p-6">Event delegation allows a parent element to handle events on its child elements by leveraging event propagation, specifically the bubbling phase, for efficient and dynamic event management.
+                <p class="regular text-lg tracking-wide p-6">Event delegation allows a parent element to handle events
+                    on its child elements by leveraging event propagation, specifically the bubbling phase, for
+                    efficient and dynamic event management.
                 </p>
             </div>
         </div>
@@ -114,19 +125,31 @@
             <div class="bg-white w-[96rem] mb-6 rounded-2xl">
                 <h1 class="semibold text-xl tracking-wide p-6">Question-4: What is event bubbling in the DOM?</h1>
                 <hr class="border-2px border-dotted bg-[#3751fd19]">
-                <p class="regular text-lg tracking-wide p-6">Event bubbling in the DOM is a mechanism where an event triggered on a child element propagates upward through its ancestors, reaching the root of the document unless stopped.
+                <p class="regular text-lg tracking-wide p-6">Event bubbling in the DOM is a mechanism where an event
+                    triggered on a child element propagates upward through its ancestors, reaching the root of the
+                    document unless stopped.
                 </p>
             </div>
         </div>
         <div class="flex justify-center">
             <div class="bg-white w-[96rem] mb-6 rounded-2xl">
-                <h1 class="semibold text-xl tracking-wide p-6">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+                <h1 class="semibold text-xl tracking-wide p-6">Question-5: How do you create, add, and remove elements
+                    using JavaScript?</h1>
                 <hr class="border-2px border-dotted bg-[#3751fd19]">
-                <p class="regular text-lg tracking-wide p-6">In JavaScript, you can create elements using document.createElement, add them using methods like appendChild or insertBefore, and remove them using removeChild or the remove() method.
+                <p class="regular text-lg tracking-wide p-6">In JavaScript, you can create elements using
+                    document.createElement, add them using methods like appendChild or insertBefore, and remove them
+                    using removeChild or the remove() method.
                 </p>
             </div>
         </div>
-        
     </main>
+    
+    <script>
+        document.getElementById('nav-to-home').addEventListener('click', function (event) {
+            event.preventDefault();
+            window.location.href = "index.html";
+        })
+    </script>
+    <!-- <script src="operations.js"></script> -->
 </body>
 </html>
