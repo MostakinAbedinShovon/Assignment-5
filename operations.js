@@ -253,4 +253,32 @@ document.getElementById('clear').addEventListener('click', function () {
     document.getElementById('activity-log').innerHTML = "";
 })
 
+// Random Background Color
+let cnt = 1;
+document.getElementById('bg-change').addEventListener('click', function () {
+
+    if (cnt == 1) document.getElementById('random-bg-change').style.background = '#AC1754', cnt++;
+    else if (cnt == 2) document.getElementById('random-bg-change').style.background = '#D3E671', cnt++;
+    else if (cnt == 3) document.getElementById('random-bg-change').style.background = '#D98324', cnt++;
+    else if (cnt == 4) document.getElementById('random-bg-change').style.background = '#B7B1F2', cnt++;
+    else if (cnt == 5) document.getElementById('random-bg-change').style.background = '#155E95', cnt++;
+    else if (cnt == 6) document.getElementById('random-bg-change').style.background = '#EB5A3C', cnt++;
+    else if (cnt == 7) document.getElementById('random-bg-change').style.background = '#7E99A3', cnt++;
+    else if (cnt == 8) document.getElementById('random-bg-change').style.background = '#EFB036', cnt++;
+    else if (cnt == 9) document.getElementById('random-bg-change').style.background = '#AC1754', cnt++;
+    else if (cnt == 10) document.getElementById('random-bg-change').style.background = '#D98324', cnt++;
+    else if (cnt == 11) document.getElementById('random-bg-change').style.background = '#D3E671', cnt++;
+    else if (cnt == 12) document.getElementById('random-bg-change').style.background = '#780C28', cnt++;
+    else if (cnt == 13) document.getElementById('random-bg-change').style.background = '#7E99A3', cnt++;
+    else if (cnt == 14) document.getElementById('random-bg-change').style.background = '#155E95', cnt++;
+    else if (cnt == 15) document.getElementById('random-bg-change').style.background = '#B7B1F2', cnt++;
+    else if (cnt == 16) document.getElementById('random-bg-change').style.background = '#155E95', cnt++;
+    else if (cnt == 17) document.getElementById('random-bg-change').style.background = '#80CBC4', cnt++;
+    else if (cnt == 18) document.getElementById('random-bg-change').style.background = '#7E99A3', cnt++;
+    else if (cnt == 19) document.getElementById('random-bg-change').style.background = '#D98324', cnt++;
+    else if (cnt == 20) document.getElementById('random-bg-change').style.background = '#780C28', cnt++;
+
+    if (cnt == 21) cnt = 1;
+})
+
 
