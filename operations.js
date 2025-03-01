@@ -9,9 +9,12 @@ document.getElementById('Day').textContent = `${day}`, document.getElementById('
 
 
 // *Card Operations*
-
+let complete = 0;
 // First Card
 document.getElementById('btn1').addEventListener('click', function () {
+    // For Completation
+    complete++;
+
     // Task Decrease Section
     document.getElementById('task-count').innerText = parseInt(document.getElementById('task-count').innerText) - 1;
 
@@ -20,9 +23,10 @@ document.getElementById('btn1').addEventListener('click', function () {
 
     // Alert Section
     alert(document.getElementById('hdr1').innerText);
+    if (complete == 6) alert('Congrats!!! You have completed all the current tasks.');
 
-    //Button low visibility & disable Section
-    document.getElementById('btn1').style.opacity = "0.3";
+        //Button low visibility & disable Section
+        document.getElementById('btn1').style.opacity = "0.3";
     document.getElementById('btn1').disabled = true;
 
     // Activity Log Create
@@ -51,6 +55,9 @@ document.getElementById('btn1').addEventListener('click', function () {
 
 // Second Card
 document.getElementById('btn2').addEventListener('click', function () {
+    // For Completation
+    complete++;
+
     // Task Decrease Section
     document.getElementById('task-count').innerText = parseInt(document.getElementById('task-count').innerText) - 1;
 
@@ -59,6 +66,7 @@ document.getElementById('btn2').addEventListener('click', function () {
 
     // Alert Section
     alert(document.getElementById('hdr2').innerText);
+    if (complete == 6) alert('Congrats!!! You have completed all the current tasks.');
 
     //Button low visibility & disable Section
     document.getElementById('btn2').style.opacity = "0.3";
@@ -90,6 +98,9 @@ document.getElementById('btn2').addEventListener('click', function () {
 
 // Third Card
 document.getElementById('btn3').addEventListener('click', function () {
+    // For Completation
+    complete++;
+
     // Task Decrease Section
     document.getElementById('task-count').innerText = parseInt(document.getElementById('task-count').innerText) - 1;
 
@@ -98,6 +109,7 @@ document.getElementById('btn3').addEventListener('click', function () {
 
     // Alert Section
     alert(document.getElementById('hdr3').innerText);
+    if (complete == 6) alert('Congrats!!! You have completed all the current tasks.');
 
     //Button low visibility & disable Section
     document.getElementById('btn3').style.opacity = "0.3";
@@ -130,6 +142,9 @@ document.getElementById('btn3').addEventListener('click', function () {
 
 // Fourth Card
 document.getElementById('btn4').addEventListener('click', function () {
+    // For Completation
+    complete++;
+
     // Task Decrease Section
     document.getElementById('task-count').innerText = parseInt(document.getElementById('task-count').innerText) - 1;
 
@@ -138,6 +153,7 @@ document.getElementById('btn4').addEventListener('click', function () {
 
     // Alert Section
     alert(document.getElementById('hdr4').innerText);
+    if (complete == 6) alert('Congrats!!! You have completed all the current tasks.');
 
     //Button low visibility & disable Section
     document.getElementById('btn4').style.opacity = "0.3";
@@ -170,6 +186,9 @@ document.getElementById('btn4').addEventListener('click', function () {
 
 // Fifth Card
 document.getElementById('btn5').addEventListener('click', function () {
+    // For Completation
+    complete++;
+
     // Task Decrease Section
     document.getElementById('task-count').innerText = parseInt(document.getElementById('task-count').innerText) - 1;
 
@@ -178,6 +197,7 @@ document.getElementById('btn5').addEventListener('click', function () {
 
     // Alert Section
     alert(document.getElementById('hdr5').innerText);
+    if (complete == 6) alert('Congrats!!! You have completed all the current tasks.');
 
     //Button low visibility & disable Section
     document.getElementById('btn5').style.opacity = "0.3";
@@ -210,6 +230,9 @@ document.getElementById('btn5').addEventListener('click', function () {
 
 // Sixth Card
 document.getElementById('btn6').addEventListener('click', function () {
+    // For Completation
+    complete++;
+
     // Task Decrease Section
     document.getElementById('task-count').innerText = parseInt(document.getElementById('task-count').innerText) - 1;
 
@@ -218,6 +241,7 @@ document.getElementById('btn6').addEventListener('click', function () {
 
     // Alert Section
     alert(document.getElementById('hdr6').innerText);
+    if (complete == 6) alert('Congrats!!! You have completed all the current tasks.');
 
     //Button low visibility & disable Section
     document.getElementById('btn6').style.opacity = "0.3";
